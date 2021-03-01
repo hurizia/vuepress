@@ -1,0 +1,21 @@
+{
+  "name": "forrest",
+  "version": "0.0.1",
+  "description": "IT 기술 정리",
+  "main": "index.js",
+  "authors": {
+    "name": "swjang",
+    "email": "forrest.jang@gmail.com"
+  },
+  "repository": "https://github.com/hurizia/hurizia.github.io.git/Forrest",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "@vuepress/plugin-blog": "^1.9.4",
+    "vuepress": "^1.5.3"
+  }
+}
