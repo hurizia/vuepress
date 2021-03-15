@@ -16,6 +16,7 @@
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.8.2",
     "@vuepress/plugin-blog": "^1.9.4",
+    "markdown-it-plantuml": "^1.4.1",
     "vuepress": "^1.5.3"
   }
 }

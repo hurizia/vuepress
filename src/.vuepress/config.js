@@ -34,12 +34,16 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
-        text: 'About',
-        link: '/about/',
+        text: 'Posts',
+        link: '/posts/',
       },
       {
         text: 'Guide',
         link: '/guide/',
+        items: [
+          { text: 'About Me', link: '/about/me' },
+          { text: 'About Blog', link: '/about/blog' }
+       ]
       },
       {
         text: 'Config',
@@ -61,16 +65,26 @@ module.exports = {
           ]
         }
       ],
-      '/about/': [
+      '/posts/': [
         {
-          title: 'About',
+          title: 'Posts',
           collapsable: false,
           children: [
             '',
             'V8_동작_방식',
+            'SPRING_FILTER_VS_INTERCEPTOR_VS_AOP',
+            'UML',
+            'SPRING_CONDITIONAL_BEAN'
           ]
         }
       ],
+    }
+  },
+
+  markdown: {
+    lineNumbers: true,
+    extendMarkdown: md => {
+      md.use(require('markdown-it-plantuml'))
     }
   },
 

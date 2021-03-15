@@ -26,4 +26,4 @@ JIT 코드는 일반적인 인터프러터 언어에 비해 훨씬 좋은 성능
 2. 정적 컴파일러 언어로 Garbage Collection을 지원하게 만들 수 있지만, JIT 시스템을 이용하면 더 쉽게 GC를 사용할 수 있다.
 
 ## 참고
-1. [위키백과](https://ko.wikipedia.org/wiki/JIT_%EC%BB%B4%ED%8C%8C%EC%9D%BC)
+- [위키백과](https://ko.wikipedia.org/wiki/JIT_%EC%BB%B4%ED%8C%8C%EC%9D%BC)
