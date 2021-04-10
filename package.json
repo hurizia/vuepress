@@ -16,7 +16,14 @@
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.8.2",
     "@vuepress/plugin-blog": "^1.9.4",
+    "@vuepress/plugin-medium-zoom": "^1.8.2",
+    "@vuepress/plugin-nprogress": "^1.8.2",
+    "get-google-fonts": "^1.2.2",
     "markdown-it-plantuml": "^1.4.1",
     "vuepress": "^1.5.3"
+  },
+  "dependencies": {
+    "vue-feather-icons": "^5.1.0",
+    "vuetify": "^2.4.8"
   }
 }

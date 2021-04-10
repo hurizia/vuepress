@@ -1,0 +1,67 @@
+---
+title: AARI WEB REQUEST
+date: 2021-3-30
+tags: 
+  - rpa
+  - aa
+  - arri
+author: swjang
+location: Seoul  
+---
+
+
+## What is AARI? Why AARI?
+
+AARI is the Automation Anywhere Robotic Interface.
+AARI enables federated engagement with robotic process automation initiatives through:
+ - Native applications plugins
+ - Interactive desktop forms
+ - Collaborative web interface
+
+AARI는 Automation Anywhere 로봇 인터페이스입니다.
+AARI는 다음을 통해 로봇 프로세스 자동화 이니셔티브와의 연합 참여를 가능하게합니다.
+ - 기본 애플리케이션 플러그인
+ - 대화 형 데스크탑 양식
+ - 협업 웹 인터페이스
+
+## Anatomy of an AARI Web Request
+
+AARI Web Request is made of :
+
+Bot(s)
+ - Automating repetitive, rule based tasks.
+
+Form(s)
+ - Enabling humans to invoke/interact with bots through customizable interfaces.
+
+Process
+ - Contains logic for triggering bots/forms and coordinates the flow of data.
+
+ ![ARRI Web Requst](img/ARRI Web Request 개발.png)
+
+Bonus Distinction:
+Request
+ - If a process is a definition of a template for how bots/forms come together. 
+ - A request is a specific instance of that template. 
+
+AARI 웹 요청은 다음으로 구성됩니다.
+
+봇
+반복적 인 규칙 기반 작업을 자동화합니다.
+
+양식
+사용자 지정 가능한 인터페이스를 통해 인간이 봇을 호출/상호 작용할 수 있도록합니다.
+
+방법
+봇/양식을 트리거하는 로직을 포함하고 데이터 흐름을 조정합니다.
+
+보너스 구별 :
+의뢰
+  -프로세스가 봇 / 양식이 결합되는 방식에 대한 템플릿의 정의 인 경우.
+  -요청은 해당 템플릿의 특정 인스턴스입니다.
+
+## 참조
+- [RPA Use Case with AARI + A2019 from Automation Anywhere](https://www.youtube.com/watch?v=gSsgm_n1yRc)
+
+
+

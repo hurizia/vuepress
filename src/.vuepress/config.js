@@ -27,58 +27,24 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: '',
-    editLinks: false,
-    docsDir: '',
-    editLinkText: '',
-    lastUpdated: false,
     nav: [
       {
         text: 'Posts',
-        link: '/posts/',
+        link: '/',
       },
       {
-        text: 'Guide',
-        link: '/guide/',
-        items: [
-          { text: 'About Me', link: '/about/me' },
-          { text: 'About Blog', link: '/about/blog' }
-       ]
+        text: 'Docker',
+        link: '/tag/docker/',
       },
       {
-        text: 'Config',
-        link: '/config/'
+        text: 'Markdown',
+        link: '/tag/markdown/',
       },
       {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
-      }
+        text: 'Tags',
+        link: '/tag/',
+      },
     ],
-    sidebar: {
-      '/guide/': [
-        {
-          title: 'Guide',
-          collapsable: false,
-          children: [
-            '',
-            'using-vue',
-          ]
-        }
-      ],
-      '/posts/': [
-        {
-          title: 'Posts',
-          collapsable: false,
-          children: [
-            '',
-            'V8_동작_방식',
-            'SPRING_FILTER_VS_INTERCEPTOR_VS_AOP',
-            'UML',
-            'SPRING_CONDITIONAL_BEAN'
-          ]
-        }
-      ],
-    }
   },
 
   markdown: {
@@ -93,7 +59,55 @@ module.exports = {
    */
   plugins: [
     '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
-    '@vuepress/blog'
+    '@vuepress/nprogress',    
+    [
+      '@vuepress/blog',
+      {
+        directories: [
+          {
+            // Unique ID of current classification
+            id: 'post',
+            // Target directory
+            dirname: '_posts',
+            // Path of the `entry page` (or `list page`)
+            path: '/',
+          },
+        ],
+        frontmatters: [
+          {
+            // Unique ID of current classification
+            id: 'tag',
+            // Decide that the frontmatter keys will be grouped under this classification
+            keys: ['tags'],
+            // Path of the `entry page` (or `list page`)
+            path: '/tag/'
+          },
+        ],
+        sitemap: {
+          hostname: 'http://localhost'
+        },
+        //  vuepress-plugin-vssue
+        comment: {
+          // Which service you'd like to use
+          service: 'vssue',
+          // The owner's name of repository to store the issues and comments.
+          owner: 'You',
+          // The name of repository to store the issues and comments.
+          repo: 'Your repo',
+          // The clientId & clientSecret introduced in OAuth2 spec.
+          clientId: 'Your clientId',
+          clientSecret: 'Your clientSecret',
+        },
+        // vuepress-plugin-mailchimp
+        newsletter: {
+          // Put your endpoint, not mine.
+          endpoint: "https://billyyyyy3320.us4.list-manage.com/subscribe/post?u=4905113ee00d8210c2004e038&amp;id=bd18d40138"
+        },
+        feed: {
+          canonical_base: 'http://localhost',
+        },
+      },
+    ],
   ]
+
 }
